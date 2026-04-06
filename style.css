@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+}
+
+.header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* Container - Flexbox to align horizontally */
+.container {
+    display: flex;
+    justify-content: center; /* ჰორიზონტალურად ცენტრში */
+    align-items: center;     /* ვერტიკალურად ცენტრში */
+    gap: 20px;               /* შორის მანძილი */
+    padding: 20px;
+}
+
+/* თითოეული სექცია */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* სექციის შიგნითაც ყველაფერი ცენტრში */
+}
+
+/* სურათები მარჯვნივ/მარცხნივ */
+.side-image {
+    width: auto;
+    height: 200px;        /* სურათის ფიქსირებული სიმაღლე */
+    object-fit: cover;    /* სურათის პროპორციული შევსება */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* მარცხენა სურათი მარჯვენის ტოლი */
+.side-image.left {
+    height: 200px;        /* ერთი სიმაღლე მარჯვენასთან ტოლი */
+}
+
+/* ვიდეო შუაში */
+.center-video {
+    width: 255px;         /* ბოლო დადგენილი ზომა */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
